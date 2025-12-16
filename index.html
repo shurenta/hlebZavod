@@ -8,24 +8,25 @@
 </head>
 
 <body>
-    <aside class="sidepanel">
-        <a href="#" class="sidepanel__link"><img src="/src/icons/Facebook.svg" alt="facebook"></a>
-        <a href="#" class="sidepanel__link"><img src="/src/icons/Instagram.svg" alt="instagram"></a>
-        <a href="#" class="sidepanel__link"><img src="/src/icons/Github.svg" alt="github"></a>
-        <div class="sidepanel__devider"></div>
-        <div class="sidepanel__text"><span>Социальные сети</span></div>
-    </aside>
-    <section class="promo">
+    <header class="main-header">
         <div class="container">
-            <div class=" title title__fz16px promo__subtitle">Меня зовут Александра Смит</div>
-            <h1 class="title title__fz48 promo__title">Я web-разработчик
-                из города Москва</h1>
-            <div class="promo__btns">
-                <a href="#" class="promo__link btn">Портфолио</a>
-                <a href="#" class="promo__link">Про меня</a>
+            <div class="main-header__wrapper">
+                <img class="main-header__logo" src="/src/img/logo.png" alt="Логотип">
+                <div class="main-header__open-nav">
+                    <span></span>
+                </div>
+                <nav class="main-nav">
+                    <div class="main-nav__close"></div>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="#">Главная</a></li>
+                        <li class="main-nav__item"><a href="#">Ваземский пряник</a></li>
+                        <li class="main-nav__item"><a href="#">Наша продукция</a></li>
+                        <li class="main-nav__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a class="main-header__phone" href="tel:+79001111111">Тел: +7-900-111-11-11</a>
             </div>
-        </div>
-    </section>
+    </header>
     <script type="module" src="/src/js/script.js"></script>
 </body>
 

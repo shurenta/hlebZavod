@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: 'Montserrat';
     src: local('Montserrat Regular'), local('Montserrat-Regular'),
         url(/src/fonts/Montserrat-Regular.woff2) format(woff2),
@@ -14,4 +14,4 @@
         url(/src/fonts/Montserrat-Bold.woff) format(woff);
     font-weight: 700;
     font-style: normal;
-} */
+}

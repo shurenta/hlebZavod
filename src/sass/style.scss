@@ -8,10 +8,7 @@
 
 // Базовые стили
 @use "/src/sass/base/basic.scss";
-@use "/src/sass/base/mixines.scss";
 
 // Блоки
-@use "/src/sass/blocks/promo.scss";
-@use "/src/sass/blocks/title.scss";
-@use "/src/sass/blocks/button.scss";
-@use "/src/sass/blocks/sidepanel.scss";
+@use "/src/sass/blocks/main-header.scss";
+@use "/src/sass/blocks/main-nav.scss";

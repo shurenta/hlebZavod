@@ -31,12 +31,28 @@ img {
 }
 
 
-// html {
-//     font-family: 'Montserrat', sans-serif;
-//     scroll-behavior: smooth;
-// }
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
 
-// .container {
-//     width: 1140px;
-//     margin: 0 auto;
-// }
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .main-header {
+        .navVisible {
+            left: 0;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 460px) {}
