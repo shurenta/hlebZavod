@@ -3,7 +3,7 @@
 .main-nav {
     font-weight: 700;
     margin: 0 auto;
-    // width: 70%;
+    width: 60%;
 
     &__list {
         list-style: none;
@@ -11,7 +11,12 @@
         display: flex;
         flex-wrap: wrap;
         text-transform: uppercase;
-        column-gap: 20px;
+        justify-content: space-between;
+
+        a:hover {
+            color: $hoverElement;
+            transition: color 0.5s ease;
+        }
     }
 
     a {
@@ -26,14 +31,14 @@
         position: absolute;
         left: -1000px;
         top: 0px;
-        background-color: $white;
+        background-color: $background;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 2%;
         padding-top: 20px;
         padding-bottom: 20px;
         font-size: 14px;
 
-        &__close {
+        &__close-button {
             width: 30px;
             height: 30px;
             position: absolute;

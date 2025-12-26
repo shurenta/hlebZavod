@@ -1,0 +1,85 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.about {
+    padding-top: 100px;
+    background-image: url('/src/img/bgIndex.jpg');
+    width: 100%;
+    height: 100vh;
+
+    &__flex-container {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__title {
+        width: 100%;
+        font-size: 55px;
+        font-weight: bold;
+        color: $white;
+        text-align: center;
+
+    }
+
+    &__text {
+        width: 60%;
+        font-size: 20px;
+        color: $white;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .about {
+
+        &__title {
+            font-size: 43px;
+
+
+        }
+
+        &__text {
+            font-size: 20px;
+            width: 90%;
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+
+        &__title {
+            font-size: 23px;
+
+
+        }
+
+        &__text {
+            width: 100%;
+            font-size: 14px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .about {
+
+        &__title {
+            font-size: 15px;
+
+
+        }
+
+        &__text {
+            font-size: 12px;
+
+        }
+    }
+}

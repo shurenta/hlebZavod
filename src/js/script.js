@@ -1,15 +1,15 @@
 import "/src/sass/style.scss";
 
-let openNav = document.querySelector('.main-header__open-nav');
+let openNavButton = document.querySelector('.main-header__open-nav-button');
 let mainNav = document.querySelector('.main-nav');
-let closeNav = document.querySelector('.main-nav__close');
+let closeNavButton = document.querySelector('.main-nav__close-button');
 
-openNav.addEventListener('click', () => {
-    openNav.classList.add('visibtleButtonNav');
-    mainNav.classList.add('navVisible');
+openNavButton.addEventListener('click', () => {
+    mainNav.classList.add('openNav');
+    mainNav.classList.remove('closeNav');
 });
 
-closeNav.addEventListener('click', () => {
-    openNav.classList.remove('visibtleButtonNav');
-    mainNav.classList.remove('navVisible');
+closeNavButton.addEventListener('click', () => {
+    mainNav.classList.remove('openNav');
+    mainNav.classList.add('closeNav');
 });

@@ -7,8 +7,11 @@
     box-shadow: 0 15px 9px -2px rgba(0, 0, 0, 0.1);
     min-height: 100px;
     font-size: 18px;
-    position: relative;
-    background-color: #e9d4a8;
+    background-color: $background;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
     &__wrapper {
         display: flex;
@@ -34,7 +37,7 @@
 
 @media screen and (max-width: 1300px) {
     .main-header {
-        font-size: 11px;
+        font-size: 12px;
     }
 }
 
@@ -44,7 +47,7 @@
             justify-content: space-between;
         }
 
-        &__open-nav {
+        &__open-nav-button {
             display: block;
             width: 70px;
             height: 70px;
@@ -111,7 +114,7 @@
             margin-top: 10px;
         }
 
-        &__open-nav {
+        &__open-nav-button {
             grid-area: openNav;
         }
     }

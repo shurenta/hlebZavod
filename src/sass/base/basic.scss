@@ -1,3 +1,5 @@
+@use "/src/sass/base/variables.scss" as *;
+
 h1,
 h2,
 h3,
@@ -41,18 +43,35 @@ html {
     margin: 0 auto;
 }
 
+.main-nav {
+    .active {
+        color: $hoverElement;
+    }
+}
+
+.visibility {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+
 @media screen and (max-width: 768px) {
     .container {
         width: 80%;
     }
 
     .main-header {
-        .navVisible {
+        .openNav {
             left: 0;
+            transition: left 0.5s ease;
+        }
+
+        .closeNav {
+            left: -1000px;
+            transition: left 0.5s ease;
         }
 
     }
 
 }
-
-@media screen and (max-width: 460px) {}
